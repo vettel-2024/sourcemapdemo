@@ -13,6 +13,11 @@ const routes = [
     name: 'About',
     component: About,
   },
+  {
+    path: '/trigger',
+    name: 'trigger',
+    component: () => import('../views/ErrorView.vue')
+}
 ];
 
 const router = createRouter({

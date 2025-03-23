@@ -3,6 +3,7 @@
     <nav>
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
+      <RouterLink to="/trigger">触发js异常</RouterLink>
     </nav>
     <router-view />
   </div>
@@ -12,10 +13,10 @@
 import { onMounted } from 'vue' 
 
 onMounted(() => {
-  let testNum = null;
-  if(testNum.length > 1) {
-    console.log("测试报错了");
-  }
+  // let testNum = null;
+  // if(testNum.length > 1) {
+    // console.log("测试报错了");
+  // }
 })
 </script>
 
