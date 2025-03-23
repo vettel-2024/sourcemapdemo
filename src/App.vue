@@ -4,6 +4,8 @@
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
       <RouterLink to="/trigger">触发js异常</RouterLink>
+      <RouterLink to="/record">录制</RouterLink>
+      <RouterLink to="/playscreen">回放</RouterLink>
     </nav>
     <router-view />
   </div>

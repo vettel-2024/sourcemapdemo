@@ -17,7 +17,17 @@ const routes = [
     path: '/trigger',
     name: 'trigger',
     component: () => import('../views/ErrorView.vue')
-}
+  },
+  {
+    path: '/record',
+    name: 'record',
+    component: () => import('../views/RecordScreen.vue')
+  },
+  {
+    path: '/playscreen',
+    name: 'playscreen',
+    component: () => import('../views/PlayScreen.vue')
+  },
 ];
 
 const router = createRouter({

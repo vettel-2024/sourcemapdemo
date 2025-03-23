@@ -5,7 +5,7 @@ import { createPinia } from 'pinia';
 import ErrorStackParser from 'error-stack-parser';
 import 'element-plus/dist/index.css'
 import ElementPlus from 'element-plus'
-import { findCodeBySourceMap } from './utils';
+// import { findCodeBySourceMap } from './utils';
 const app = createApp(App);
 
 app.use(router);
@@ -14,7 +14,7 @@ app.use(ElementPlus)
 
 app.config.errorHandler = (err: any, vm) => {
   const stack = ErrorStackParser.parse(err as Error);
-  findCodeBySourceMap(stack[0]);
+  // findCodeBySourceMap(stack[0]);
   const jsError = {
     stack_frames: stack,
     message: err.message,
